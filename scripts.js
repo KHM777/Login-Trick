@@ -35,3 +35,10 @@ btnContainer.addEventListener('mouseover', shiftButton);
 btn.addEventListener('mouseover', shiftButton);
 form.addEventListener('input', showMsg)
 btn.addEventListener('touchstart', shiftButton);
+
+function showMessage() {
+            var messageDiv = document.createElement("div");
+            messageDiv.id = "message";
+            messageDiv.textContent = "تم الضغط على الزر!";
+            document.querySelector(".btn-container").appendChild(messageDiv);
+        }
